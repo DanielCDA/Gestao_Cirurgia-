@@ -29,10 +29,10 @@ específica ddo hospital(Bloco opretório).
     	tring data, hora, sala;
 	
 	PacienteModelo
+		int id;
+		float peso;
 		String nomePaciente, bi, nacionalidade, genero, 
 			provincia, muncipio, comuna;
-		int idade;
-		float peso;
 		Date dataNascimento;
 	
 	MedicoModelo
