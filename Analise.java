@@ -25,20 +25,19 @@ específica ddo hospital(Bloco opretório).
 		int id;
 		Paciente paciente;
     	Medico medico;
-		String tipoCirugia;
-    	tring data, hora, sala;
+		String tipoCirugia, hora, sala;
+		Date dataEntrada, ;
 	
 	PacienteModelo
-		int id;
+		int id, telefoneResponsavel;
 		float peso;
 		String nomePaciente, bi, nacionalidade, genero, 
-			provincia, muncipio, comuna;
+			provincia, muncipio, comuna,nomeResponsavel;
 		Date dataNascimento;
 	
 	MedicoModelo
 		int idCirugia, telefone;
 		String especialidade, nomeMedico;
-		Date dataEntrada, dataMorte;
 		
 	GestaoBloco
 		List<Paciente> pacientes;
