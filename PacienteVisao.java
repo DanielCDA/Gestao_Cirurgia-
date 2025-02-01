@@ -1,12 +1,14 @@
 /*----------------------------------------
 Nome: Daniel Agostinho, 29321
 Tema: Gestão de Bloco Operetório
-
+File: PacienteVisao
+Data: 28/01/2025
 ------------------------------------------*/
 
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
+import SwingComponents.*;
 
 public class PacienteVisao extends JFrame
 {	

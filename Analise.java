@@ -31,7 +31,7 @@ específica ddo hospital(Bloco opretório).
 	PacienteModelo
 		int id, telefoneResponsavel;
 		float peso;
-		String nomePaciente, bi, nacionalidade, genero, 
+		String nomePaciente, nacionalidade, genero, 
 			provincia, muncipio, comuna,nomeResponsavel;
 		Date dataNascimento;
 	
