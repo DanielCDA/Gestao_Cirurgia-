@@ -18,6 +18,10 @@ public class ApresentacaoVisao extends JFrame
 	{
 		super("Apresentacao do Projecto"); 
 				
+		JPanel painelNorte = new JPanel();
+		painelNorte.add( new JLabel( new ImageIcon("C:\Users\USER\Documents\Ucan_2023\UCAN2024\FP III\DanielAgostinho29321\\image\\LogoRSPServicos.PNG")));
+		
+		getContentPane().add(painelNorte, BorderLayout.NORTH);		
 		getContentPane().add(sul = new PainelSul(), BorderLayout.SOUTH);
 		
 		setSize(500, 400);
