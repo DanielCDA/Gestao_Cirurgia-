@@ -19,16 +19,17 @@ public class ApresentacaoVisao extends JFrame
 		super("Apresentacao do Projecto"); 
 				
 		JPanel painelNorte = new JPanel();
-		painelNorte.add( new JLabel( new ImageIcon("C:\Users\USER\Documents\Ucan_2023\UCAN2024\FP III\DanielAgostinho29321\\image\\LogoRSPServicos.PNG")));
+	painelNorte.add( new JLabel( new ImageIcon("C:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\sd.PNG")));
 		
 		getContentPane().add(painelNorte, BorderLayout.NORTH);		
 		getContentPane().add(sul = new PainelSul(), BorderLayout.SOUTH);
 		
-		setSize(500, 400);
+		setSize(800, 500);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		
 	}
+	
 	
 	class PainelSul extends JPanel implements ActionListener
 	{
@@ -37,8 +38,8 @@ public class ApresentacaoVisao extends JFrame
 		public PainelSul()
 		{
 			
-			add( entrarJBT = new JButton("Entrar") );
-			add( sairJBT = new JButton("Sair") );
+			add( entrarJBT = new JButton("Entrar", new ImageIcon("c:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\next24.PNG")) );
+			add( sairJBT = new JButton("Sair", new ImageIcon("c:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\cancel24.PNG")) );
 			
 			entrarJBT.addActionListener(this);
 			sairJBT.addActionListener(this);
@@ -47,11 +48,12 @@ public class ApresentacaoVisao extends JFrame
 		public void actionPerformed(ActionEvent evt)
 		{
 			if (evt.getSource() == entrarJBT)
-				new MenuPrincipalVisao();
+				new MenuPrincipal();
 			else
 				dispose();
 		}
 	}
+	
 	
 	public static void main(String args[])
 	{
