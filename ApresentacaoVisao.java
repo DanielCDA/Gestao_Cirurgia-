@@ -16,7 +16,7 @@ public class ApresentacaoVisao extends JFrame
 	
 	public ApresentacaoVisao()
 	{
-		super("Apresentacao do Projecto"); 
+		super("Bloco Operatorio"); 
 				
 		JPanel painelNorte = new JPanel();
 	painelNorte.add( new JLabel( new ImageIcon("C:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\sd.PNG")));
@@ -48,7 +48,7 @@ public class ApresentacaoVisao extends JFrame
 		public void actionPerformed(ActionEvent evt)
 		{
 			if (evt.getSource() == entrarJBT)
-				new MenuPrincipal();
+				new MenuPrincipalVisao();
 			else
 				dispose();
 		}
@@ -61,4 +61,3 @@ public class ApresentacaoVisao extends JFrame
 		new ApresentacaoVisao();
 	}
 }
-//ddd

@@ -17,21 +17,43 @@ public class MenuPrincipalVisao extends JFrame implements ActionListener
 	private JMenuItem listarPacienteItem, listarEntradasItem, listarSaidasItem;
 	private JMenuItem cirugiaItem, nacionalidadesItem, provinciasItem, municipiosItem, comunasItem;
 	private JMenuBar menuBar;
-	
+		
 	public MenuPrincipalVisao()
 	{
 		super("Menu Principal");
 		
-		menuBar = new JMenuBar();
+		JPanel painelNorte = new JPanel();
+		painelNorte.add( new JLabel( new ImageIcon("C:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\bloco.PNG")));
+		getContentPane().add(painelNorte, BorderLayout.NORTH);			
 		
+		menuBar = new JMenuBar();
+
 		setJMenuBar( menuBar );
 		
 		instanciarMenuItems();
 		
-		setSize(800, 700);
+				
+		setSize(710, 650);
 		setLocationRelativeTo(null);
 		setVisible(true);		
 	}
+	
+	class PainelNorte extends JPanel
+	{
+		
+		public PainelNorte()
+		{
+			setLayout( new FlowLayout() );
+			
+			JLabel lb = new JLabel(new ImageIcon("C:\\Users\\USER\\Documents\\Ucan_2023\\UCAN2024\\FP III\\DanielAgostinho29321\\image\\bloco.PNG"));
+			add( lb );
+		}
+	}
+	
+	
+	
+	
+	
 	
 	public void instanciarMenuItems()
 	{
@@ -58,6 +80,7 @@ public class MenuPrincipalVisao extends JFrame implements ActionListener
 		novoPacienteItem.addActionListener(this);	
 		sairItem.addActionListener(this);			
 	}
+	
 	
 	public void actionPerformed(ActionEvent evt)
 	{
